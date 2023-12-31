@@ -1,0 +1,221 @@
+@font-face {
+    font-family: Angelia_Beauty;
+    src: url(font/Angelia\ Beauty.ttf);
+}
+
+@font-face {
+    font-family: Saunde;
+    src: url(font/Saunde.otf);
+}
+
+*{
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #fed5e5;
+    position: relative;
+    align-items: center;
+}
+
+.card {
+    height: 400px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.card_container{
+    position: relative;
+    right: 16%;
+}
+
+.text{
+    text-align: center;
+    color: #e24e82;
+    background-color: #fed5e5;
+    border-radius: 20px;
+    position: absolute;
+    padding-top: 5px;
+    width: 290px;
+    height: 40px;
+    margin: 0px;
+    bottom: -85px;
+    left: 53px;
+}
+
+.dearFor{
+    font-size: 200%;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    top: 25px;
+    position: absolute;
+}
+
+.name{
+    font-family: Angelia_Beauty;
+}
+
+.message{
+    font-family: Saunde;
+    height: 350px;
+    width: 300px;
+    top: 100px;
+    left: 50px;
+    font-size: 98%;
+    position: absolute;
+    text-align: center;
+}
+
+.sign{
+    position: absolute;
+    text-align: center;
+    font-size: 120%;
+    width: 100px;
+    height: 40px;
+    margin: 0px;
+    top: 465px;
+    left: 250px;
+}
+
+.from{
+    font-family: Angelia_Beauty;
+    font-size: 110%;
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    margin: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 40px;
+    
+}
+
+.top_gift{
+    position: absolute;
+    width: 400px;
+    cursor: pointer;
+}
+
+.btm_gift{
+    position: absolute;
+    width: 400px;
+    cursor: pointer;
+}
+
+.card_text{
+    height: 600px;
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 100px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    visibility: hidden;
+}
+
+.card_open{
+    height: 400px;
+    width: 300px;
+    background-color: #ffffff;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 100px;
+    animation-name: card;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.text_open{
+    text-align: center;
+    color: #e24e82;
+    background-color: #fed5e5;
+    border-radius: 20px;
+    position: absolute;
+    padding-top: 5px;
+    width: 290px;
+    height: 40px;
+    margin: 0px;
+    bottom: -85px;
+    left: 53px;
+    animation-name: text;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.top_open_gift{
+    position: absolute;
+    width: 400px;
+    animation-name: topGift;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.btm_open_gift{
+    position: absolute;
+    width: 400px;
+    animation-name: btmGift;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+.card_open_text{
+    height: 600px;
+    width: 400px;
+    background-color: #ffffff;
+    border-radius: 10%;
+    margin: auto;
+    margin-top: 100px;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    visibility: hidden;
+    animation-name: cardText;
+    animation-duration: 1s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes topGift{
+    from {top: 0px;}
+    to {top: -100px; opacity: 0%; display: none;}
+}
+
+@keyframes btmGift{
+    from {bottom: -400px;}
+    to {bottom: -430px; opacity: 0%; display: none;}
+}
+
+@keyframes text{
+    from {opacity: 100%;}
+    to {opacity: 0%;}
+}
+
+@keyframes card {
+    from {opacity: 100%;}
+    to {opacity: 0%; display: none;}
+}
+
+@keyframes cardText{
+    from {opacity: 0;}
+    to {opacity: 100%; visibility: visible;}
+}
